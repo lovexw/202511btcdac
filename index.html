@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>比特币定投收益分析 - 2025年投资统计</title>
+    <title>比特币定投收益分析 - DCA投资统计</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 </head>
@@ -17,9 +17,9 @@
             <div class="header-content">
                 <div class="logo">
                     <span class="logo-icon">₿</span>
-                    <h1>比特币定投收益分析</h1>
+                    <h1>比特币定投分析</h1>
                 </div>
-                <p class="subtitle">2025年1月1日 - 11月15日 每日 $100 定投统计</p>
+                <p class="subtitle">2025年 DCA 定投收益详细分析报告</p>
             </div>
         </header>
 
@@ -27,42 +27,42 @@
         <section class="summary-section">
             <div class="summary-cards">
                 <!-- Total Investment Card -->
-                <div class="card card-primary">
+                <div class="card">
                     <div class="card-icon">💰</div>
                     <div class="card-content">
-                        <h3>累计投入</h3>
-                        <p class="card-value" id="total-investment">$0.00</p>
-                        <span class="card-unit">总投资金额</span>
+                        <h3>总投入</h3>
+                        <p class="card-value" id="total-investment">$0</p>
+                        <span class="card-unit">累计投资金额</span>
                     </div>
                 </div>
 
                 <!-- Total BTC Card -->
-                <div class="card card-secondary">
+                <div class="card">
                     <div class="card-icon">₿</div>
                     <div class="card-content">
-                        <h3>持仓比特币</h3>
+                        <h3>持仓数量</h3>
                         <p class="card-value" id="total-btc">0 BTC</p>
-                        <span class="card-unit">已购买数量</span>
+                        <span class="card-unit">已购买比特币</span>
                     </div>
                 </div>
 
                 <!-- Current Value Card -->
-                <div class="card card-tertiary">
+                <div class="card">
                     <div class="card-icon">📊</div>
                     <div class="card-content">
-                        <h3>当前资产</h3>
-                        <p class="card-value" id="final-value">$0.00</p>
+                        <h3>当前价值</h3>
+                        <p class="card-value" id="final-value">$0</p>
                         <span class="card-unit">按11月15日价格计</span>
                     </div>
                 </div>
 
                 <!-- Profit/Loss Card -->
-                <div class="card card-quaternary">
+                <div class="card">
                     <div class="card-icon" id="profit-icon">📈</div>
                     <div class="card-content">
-                        <h3>收益情况</h3>
-                        <p class="card-value" id="profit">$0.00</p>
-                        <span class="card-unit" id="profit-rate">0.00%</span>
+                        <h3>收益/亏损</h3>
+                        <p class="card-value" id="profit">$0</p>
+                        <span class="card-unit" id="profit-rate">0%</span>
                     </div>
                 </div>
             </div>
@@ -73,35 +73,64 @@
             <div class="details-grid">
                 <!-- Investment Details -->
                 <div class="detail-card">
-                    <h3 class="detail-title">投资详情</h3>
+                    <h3 class="detail-title">📈 投资概览</h3>
+                    <div class="detail-item">
+                        <span class="label">投资周期</span>
+                        <span class="value">2025/1/1 - 2025/11/15</span>
+                    </div>
                     <div class="detail-item">
                         <span class="label">购买次数</span>
                         <span class="value" id="purchase-count">0 次</span>
                     </div>
                     <div class="detail-item">
-                        <span class="label">单次投入</span>
-                        <span class="value">$100</span>
+                        <span class="label">每次投入</span>
+                        <span class="value">$100 USD</span>
                     </div>
                     <div class="detail-item">
-                        <span class="label">投资周期</span>
-                        <span class="value">11.5 个月</span>
+                        <span class="label">投资天数</span>
+                        <span class="value" id="days-count">0 天</span>
                     </div>
                 </div>
 
                 <!-- Market Details -->
                 <div class="detail-card">
-                    <h3 class="detail-title">市场数据</h3>
+                    <h3 class="detail-title">💹 市场数据</h3>
                     <div class="detail-item">
                         <span class="label">平均购入价格</span>
-                        <span class="value" id="avg-price">$0.00</span>
+                        <span class="value" id="avg-price">$0</span>
                     </div>
                     <div class="detail-item">
-                        <span class="label">卖出价格(11/15)</span>
-                        <span class="value" id="final-price">$0.00</span>
+                        <span class="label">卖出价格</span>
+                        <span class="value" id="final-price">$0</span>
                     </div>
                     <div class="detail-item">
                         <span class="label">价格变化</span>
-                        <span class="value" id="price-change">0.00%</span>
+                        <span class="value" id="price-change">0%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">最高购入价</span>
+                        <span class="value" id="max-price">$0</span>
+                    </div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div class="detail-card">
+                    <h3 class="detail-title">🎯 收益指标</h3>
+                    <div class="detail-item">
+                        <span class="label">收益金额</span>
+                        <span class="value" id="detail-profit">$0</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">收益率</span>
+                        <span class="value" id="detail-profit-rate">0%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">最低购入价</span>
+                        <span class="value" id="min-price">$0</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">价格波动</span>
+                        <span class="value" id="price-volatility">0%</span>
                     </div>
                 </div>
             </div>
@@ -112,20 +141,20 @@
             <div class="charts-grid">
                 <!-- Cumulative Value Chart -->
                 <div class="chart-card">
-                    <h3 class="chart-title">资产变化趋势</h3>
+                    <h3 class="chart-title">资产增长曲线</h3>
                     <canvas id="cumulativeChart" class="chart-canvas"></canvas>
                 </div>
 
                 <!-- Price Chart -->
                 <div class="chart-card">
-                    <h3 class="chart-title">比特币价格走势</h3>
+                    <h3 class="chart-title">BTC价格走势</h3>
                     <canvas id="priceChart" class="chart-canvas"></canvas>
                 </div>
             </div>
 
             <!-- Monthly Distribution -->
             <div class="chart-card full-width">
-                <h3 class="chart-title">各月购买分布与成本均价</h3>
+                <h3 class="chart-title">月度购买分析 & 成本均价</h3>
                 <canvas id="monthlyChart" class="chart-canvas"></canvas>
             </div>
         </section>
@@ -134,20 +163,27 @@
         <section class="transactions-section">
             <div class="section-header">
                 <h2>购买记录详情</h2>
-                <p>所有购买交易的详细信息</p>
+                <p>所有购买交易的详细信息，点击列头可排序</p>
+            </div>
+
+            <div class="table-controls">
+                <button class="sort-btn active" data-sort="date">按日期排序 ↓</button>
+                <button class="sort-btn" data-sort="price">按价格排序</button>
+                <button class="sort-btn" data-sort="value">按资产价值排序</button>
             </div>
             
             <div class="table-wrapper">
                 <table class="transactions-table">
                     <thead>
                         <tr>
-                            <th>购买日期</th>
-                            <th>比特币价格</th>
-                            <th>投入金额</th>
-                            <th>购入数量</th>
-                            <th>累计投入</th>
-                            <th>累计持仓</th>
-                            <th>当前价值</th>
+                            <th>#</th>
+                            <th onclick="sortTable('date')">购买日期 ↕</th>
+                            <th onclick="sortTable('price')">BTC价格 ↕</th>
+                            <th onclick="sortTable('invested')">投入金额 ↕</th>
+                            <th onclick="sortTable('btc')">购入数量 ↕</th>
+                            <th onclick="sortTable('cumInvested')">累计投入 ↕</th>
+                            <th onclick="sortTable('cumBtc')">累计持仓 ↕</th>
+                            <th onclick="sortTable('value')">资产价值 ↕</th>
                         </tr>
                     </thead>
                     <tbody id="transactions-tbody">
@@ -159,8 +195,8 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>此数据基于实际的2025年比特币日价格数据计算 | 仅供参考，不构成投资建议</p>
-            <p>数据统计日期：2025年11月15日</p>
+            <p>📊 数据基于真实的2025年比特币日价格 | 仅供参考，不构成投资建议</p>
+            <p>统计日期：2025年11月15日</p>
         </footer>
     </div>
 
