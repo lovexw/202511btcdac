@@ -1,0 +1,179 @@
+{
+  "total_investment": 2800,
+  "total_btc": 0.02558296,
+  "final_price": 96971.0,
+  "final_value": 2480.8,
+  "profit": -319.2,
+  "profit_rate": -11.4,
+  "purchase_count": 28,
+  "purchases": [
+    {
+      "date": "2025/10/10",
+      "price": 120275.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008314279775514446
+    },
+    {
+      "date": "2025/10/11",
+      "price": 118024.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008472852979055107
+    },
+    {
+      "date": "2025/10/12",
+      "price": 112143.0,
+      "usd_invested": 100,
+      "btc_amount": 0.000891718609275657
+    },
+    {
+      "date": "2025/10/13",
+      "price": 114502.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008733471904420883
+    },
+    {
+      "date": "2025/10/14",
+      "price": 114684.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008719612151651495
+    },
+    {
+      "date": "2025/10/15",
+      "price": 112826.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008863205289560917
+    },
+    {
+      "date": "2025/10/16",
+      "price": 110392.0,
+      "usd_invested": 100,
+      "btc_amount": 0.000905862743677078
+    },
+    {
+      "date": "2025/10/17",
+      "price": 108845.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009187376544627681
+    },
+    {
+      "date": "2025/10/18",
+      "price": 106644.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009376992610929823
+    },
+    {
+      "date": "2025/10/19",
+      "price": 106727.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009369700263288578
+    },
+    {
+      "date": "2025/10/20",
+      "price": 109192.0,
+      "usd_invested": 100,
+      "btc_amount": 0.000915818008645322
+    },
+    {
+      "date": "2025/10/21",
+      "price": 110588.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009042572431005173
+    },
+    {
+      "date": "2025/10/22",
+      "price": 112562.0,
+      "usd_invested": 100,
+      "btc_amount": 0.00088839928217338
+    },
+    {
+      "date": "2025/10/23",
+      "price": 108103.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009250437083152179
+    },
+    {
+      "date": "2025/10/24",
+      "price": 109969.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009093471796597222
+    },
+    {
+      "date": "2025/10/25",
+      "price": 110265.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009069060898743935
+    },
+    {
+      "date": "2025/10/26",
+      "price": 111418.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008975210468685491
+    },
+    {
+      "date": "2025/10/27",
+      "price": 113667.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008797628159448212
+    },
+    {
+      "date": "2025/10/28",
+      "price": 115527.0,
+      "usd_invested": 100,
+      "btc_amount": 0.000865598518095337
+    },
+    {
+      "date": "2025/10/29",
+      "price": 115506.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008657558914688414
+    },
+    {
+      "date": "2025/10/30",
+      "price": 111158.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0008996203602079922
+    },
+    {
+      "date": "2025/10/31",
+      "price": 107409.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009310206779692577
+    },
+    {
+      "date": "2025/11/10",
+      "price": 103641.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009648691155044818
+    },
+    {
+      "date": "2025/11/11",
+      "price": 105334.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009493610799931646
+    },
+    {
+      "date": "2025/11/12",
+      "price": 103494.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009662395887684311
+    },
+    {
+      "date": "2025/11/13",
+      "price": 101442.0,
+      "usd_invested": 100,
+      "btc_amount": 0.000985784980580036
+    },
+    {
+      "date": "2025/11/14",
+      "price": 100494.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0009950842836388243
+    },
+    {
+      "date": "2025/11/15",
+      "price": 96971.0,
+      "usd_invested": 100,
+      "btc_amount": 0.0010312361427643317
+    }
+  ]
+}
